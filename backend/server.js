@@ -7,9 +7,9 @@ app.use(cors());
 app.use(express.json());
 require("dotenv").config();
 
-const USER_ID = 'gnaneshwarank_12012005';       
-const EMAIL_ID = process.env.EMAIL_ID;      
-const ROLL_NUMBER = 'RA2311003020431';          
+const USER_ID = process.env.USER_ID;
+const EMAIL_ID = process.env.EMAIL_ID;
+const ROLL_NUMBER = process.env.ROLL_NUMBER;        
 
 
 const VALID_EDGE = /^[A-Z]->[A-Z]$/;
