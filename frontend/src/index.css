@@ -1,0 +1,47 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+:root {
+  --bg: #0a0a0b;
+  --surface: #111113;
+  --surface2: #18181b;
+  --border: rgba(255,255,255,0.07);
+  --border2: rgba(255,255,255,0.14);
+  --text: #f0ede8;
+  --muted: #6b6b70;
+  --accent: #1ead87;
+  --accent-dim: rgba(200,245,90,0.12);
+  --accent-mid: rgba(200,245,90,0.25);
+  --red: #ff6b6b;
+  --amber: #e3b842;
+  --blue: #6eb5ff;
+  --font-mono: 'Geist Mono', monospace;
+  --font-serif: 'Instrument Serif', serif;
+}
+
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+  z-index: 0;
+}

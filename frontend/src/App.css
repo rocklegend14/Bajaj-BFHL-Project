@@ -1,0 +1,88 @@
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+header {
+  padding: 56px 0 40px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 40px;
+}
+
+.header-tag {
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 400;
+}
+
+h1 em {
+  color: var(--accent);
+}
+
+.header-sub {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+
+.input-section {
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: 12px;
+  margin-bottom: 32px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 140px;
+  background: transparent;
+  border: none;
+  padding: 20px;
+  color: var(--text);
+}
+
+textarea::placeholder {
+  color: var(--muted);
+}
+
+.input-footer {
+  padding: 14px 20px;
+}
+
+
+.btn-submit {
+  padding: 10px 20px;
+  background: var(--accent);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.error-box {
+  color: red;
+}
+
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.hierarchy-card {
+  background: var(--surface);
+  padding: 10px;
+}
